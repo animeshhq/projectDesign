@@ -17,10 +17,10 @@ export default function Home() {
     <>
       <Navbar />
 
-      <main>
-        <section className="border-b border-zinc-900 overflow-hidden">
-          <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
-            <div className="grid items-center gap-10 sm:gap-16 lg:grid-cols-2">
+      <main className="overflow-x-hidden">
+        <section className="border-b border-zinc-900">
+          <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
+            <div className="grid items-center gap-8 md:gap-12 lg:grid-cols-2 lg:gap-16">
               <div className="order-1">
                 <div className="inline-flex items-center gap-3 rounded-full border border-zinc-900 bg-[#050505] px-4 py-2">
                   <div className="h-2 w-2 shrink-0 rounded-full bg-white animate-pulse" />
@@ -29,7 +29,7 @@ export default function Home() {
                   </span>
                 </div>
 
-                <h1 className="mt-8 max-w-xl text-4xl font-medium leading-[1.05] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl xl:text-[82px]">
+                <h1 className="mt-8 text-4xl font-medium leading-none tracking-tight sm:text-5xl lg:text-7xl xl:text-[82px]">
                   Deploy AI.
                   <br />
                   Ship faster.
@@ -37,36 +37,36 @@ export default function Home() {
                   Scale globally.
                 </h1>
 
-                <p className="mt-6 max-w-lg text-base leading-7 text-zinc-500 sm:text-lg sm:leading-8">
+                <p className="mt-6 w-full text-base leading-7 text-zinc-500 sm:text-lg sm:leading-8">
                   Build, deploy and monitor AI models from one unified platform.
                   Designed for modern machine learning workflows with a fast,
                   production-ready deployment experience.
                 </p>
 
-                <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:gap-4">
+                <div className="mt-10 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:gap-4">
                   <Link
                     to="/dashboard"
-                    className="rounded-full bg-white px-7 py-3.5 text-sm font-medium text-black transition hover:bg-zinc-200 active:bg-zinc-300"
+                    className="rounded-full bg-white px-5 py-3 text-sm font-medium text-black transition hover:bg-zinc-200 min-[350px]:px-8 min-[350px]:py-4 min-[350px]:text-base"
                   >
                     Start Deploying
                   </Link>
                   <Link
                     to="/docs"
-                    className="rounded-full border border-zinc-800 px-7 py-3.5 text-center text-sm transition hover:border-zinc-600 active:border-zinc-400"
+                    className="rounded-full border border-zinc-800 px-5 py-3 text-sm transition hover:border-zinc-600 min-[350px]:px-8 min-[350px]:py-4 min-[350px]:text-base"
                   >
                     Documentation
                   </Link>
                 </div>
 
-                <div className="mt-10 flex max-w-full items-center gap-3 overflow-x-auto rounded-xl border border-zinc-900 bg-[#050505] px-5 py-4">
+                <div className="mt-8 flex w-full items-center gap-3 rounded-xl border border-zinc-900 bg-[#050505] px-4 py-3 sm:mt-10 sm:px-5 sm:py-4">
                   <span className="shrink-0 font-mono text-zinc-500">$</span>
-                  <span className="whitespace-nowrap font-mono text-sm text-zinc-400">
+                  <span className="break-all font-mono text-xs text-zinc-400 sm:text-sm">
                     deploy neuralship-model --production
                   </span>
                 </div>
               </div>
 
-              <div className="order-2">
+              <div className="order-2 mt-6 hidden min-[350px]:block lg:mt-0">
                 <div className="overflow-hidden rounded-3xl border border-zinc-900 bg-[#050505] shadow-2xl">
                   <div className="flex items-center gap-2 border-b border-zinc-900 px-4 py-4 sm:px-6">
                     <div className="h-3 w-3 rounded-full bg-zinc-700" />
@@ -97,7 +97,7 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <div className="rounded-2xl border border-zinc-900 bg-black p-4 sm:p-5">
+                    <div className="hidden rounded-2xl border border-zinc-900 bg-black p-5 sm:block">
                       <div className="flex items-start justify-between gap-4">
                         <div className="min-w-0">
                           <h3 className="truncate text-sm font-medium sm:text-base">
@@ -116,7 +116,7 @@ export default function Home() {
                       </div>
                     </div>
 
-                    <div className="grid grid-cols-2 gap-3">
+                    <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                       <div className="rounded-2xl border border-zinc-900 bg-black p-4">
                         <p className="text-[11px] uppercase tracking-wide text-zinc-500">
                           Active Models
@@ -143,7 +143,7 @@ export default function Home() {
                         <span className="text-xs text-green-400">Live</span>
                       </div>
                       <div className="space-y-3 text-xs sm:text-sm">
-                        <div className="flex items-center justify-between gap-4">
+                        <div className="hidden items-center justify-between gap-4 sm:flex">
                           <span className="truncate text-zinc-500">
                             Image Generation API
                           </span>
@@ -374,10 +374,13 @@ export default function Home() {
                     built specifically for AI applications. Deploy models,
                     monitor health and scale effortlessly.
                   </p>
-                  <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:gap-4">
-                    <button className="rounded-full bg-white px-7 py-3.5 text-sm font-medium text-black transition hover:bg-zinc-200 active:bg-zinc-300">
+                  <div className="mt-10 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:gap-4">
+                    <Link
+                      to="/dashboard"
+                      className="rounded-full bg-white px-7 py-3.5 text-center text-sm font-medium text-black transition hover:bg-zinc-200 active:bg-zinc-300"
+                    >
                       Deploy Now
-                    </button>
+                    </Link>
                     <Link
                       to="/docs"
                       className="rounded-full border border-zinc-800 px-7 py-3.5 text-center text-sm transition hover:border-zinc-600 active:border-zinc-400"
@@ -432,7 +435,7 @@ export default function Home() {
                         </span>
                       </div>
                       <code className="block break-all text-xs text-zinc-300 sm:text-sm">
-                        https:
+                        https://api.neuralship.ai/v1/inference
                       </code>
                     </div>
                   </div>

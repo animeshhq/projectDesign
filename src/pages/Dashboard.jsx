@@ -117,28 +117,7 @@ export default function Dashboard() {
                   Create new AI deployments, monitor performance and manage
                   every project from one dashboard.
                 </p>
-                <div className="mt-10 flex flex-wrap gap-3">
-                  <button className="rounded-full bg-white px-5 py-2 text-sm font-medium text-black">
-                    Overview
-                  </button>
-
-                  <button className="rounded-full border border-zinc-800 px-5 py-2 text-sm text-zinc-400 transition hover:border-zinc-700 hover:text-white">
-                    Deployments
-                  </button>
-
-                  <button className="rounded-full border border-zinc-800 px-5 py-2 text-sm text-zinc-400 transition hover:border-zinc-700 hover:text-white">
-                    Activity
-                  </button>
-
-                  <button className="rounded-full border border-zinc-800 px-5 py-2 text-sm text-zinc-400 transition hover:border-zinc-700 hover:text-white">
-                    Analytics
-                  </button>
-                </div>
               </div>
-
-              <button className="rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition hover:bg-zinc-200">
-                New Deployment
-              </button>
             </div>
           </div>
         </section>
