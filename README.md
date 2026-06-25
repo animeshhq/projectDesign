@@ -1,16 +1,92 @@
-# React + Vite
+# NeuralShip
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Deploy AI. Ship faster. Scale globally.
 
-Currently, two official plugins are available:
+NeuralShip is a frontend concept of an AI deployment platform that I built as my **1st year B.Tech Computer Science final project**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The idea behind the project was simple: create something that looks and feels like a real production SaaS instead of another basic CRUD application.
 
-## React Compiler
+Rather than focusing on building an actual deployment infrastructure, I wanted to design the complete user experience of deploying and managing AI models through a clean dashboard inspired by modern developer tools.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Why I built this
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Most college projects focus only on functionality.
+
+For this project I wanted to challenge myself by building something that emphasized:
+
+* UI/UX
+* Component architecture
+* Responsive layouts
+* Design consistency
+* Clean code organization
+
+The design is heavily inspired by platforms like **Vercel**, while the overall concept revolves around managing AI deployments.
+
+---
+
+## What it does
+
+NeuralShip includes:
+
+* Landing page
+* Deployment Dashboard
+* Deployments page
+* Deployment Details page
+* Documentation page
+
+Users can:
+
+* Create a deployment (simulated)
+* View deployment status
+* Search deployments
+* Filter deployments
+* Sort deployments
+* View deployment details
+* Read documentation
+
+The deployment process is **completely simulated**. Creating a deployment simply updates the frontend to mimic how a real deployment platform behaves.
+
+---
+
+## Built With
+
+* React
+* React Router
+* Tailwind CSS
+* Vite
+
+---
+
+## Screens
+
+* Home
+* Dashboard
+* Deployments
+* Deployment Details
+* Documentation
+
+---
+
+## Running the project
+
+Clone the repository
+
+```bash
+git clone <repo-url>
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run the development server
+
+```bash
+npm run dev
+```
+
+This project was built for my **1st year B.Tech Computer Science final project** to explore modern frontend development and SaaS interface design.
