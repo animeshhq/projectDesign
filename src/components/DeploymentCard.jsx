@@ -6,8 +6,6 @@ export default function DeploymentCard({ deployment }) {
   return (
     <Link to={`/deployment/${deployment.id}`} className="group block">
       <article className="h-full rounded-3xl border border-zinc-900 bg-[#050505] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-zinc-700">
-        {/* Top */}
-
         <div className="mb-6 flex items-start justify-between">
           <div className="flex items-center gap-4">
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-zinc-800 bg-black text-lg font-semibold">
@@ -30,8 +28,6 @@ export default function DeploymentCard({ deployment }) {
           </span>
         </div>
 
-        {/* Model */}
-
         <div className="mb-6 rounded-2xl border border-zinc-900 bg-black p-4">
           <p className="mb-2 text-xs uppercase tracking-[0.18em] text-zinc-600">
             Model
@@ -39,8 +35,6 @@ export default function DeploymentCard({ deployment }) {
 
           <p className="font-medium">{deployment.model || "GPT-4o"}</p>
         </div>
-
-        {/* Metadata */}
 
         <div className="space-y-4">
           <div className="flex items-center justify-between">
@@ -69,8 +63,6 @@ export default function DeploymentCard({ deployment }) {
             <span>{deployment.latency || "121ms"}</span>
           </div>
         </div>
-
-        {/* Footer */}
 
         <div className="mt-8 flex items-center justify-between border-t border-zinc-900 pt-5">
           <div>

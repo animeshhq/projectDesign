@@ -26,8 +26,6 @@ export default function DeploymentDetails() {
       <Navbar />
 
       <main className="min-h-screen bg-black text-white">
-        {/* HERO */}
-
         <section className="border-b border-zinc-900">
           <div className="mx-auto max-w-7xl px-6 py-14">
             <Link
@@ -72,11 +70,7 @@ export default function DeploymentDetails() {
           </div>
         </section>
 
-        {/* CONTENT */}
-
         <div className="mx-auto max-w-7xl space-y-10 px-6 py-10">
-          {/* Stats */}
-
           <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
             <StatCard title="Requests" value={deployment.requests || "12.4K"} />
 
@@ -87,11 +81,7 @@ export default function DeploymentDetails() {
             <StatCard title="Errors" value="0.02%" />
           </div>
 
-          {/* Overview */}
-
           <section className="grid gap-8 lg:grid-cols-2">
-            {/* Endpoint */}
-
             <div className="rounded-3xl border border-zinc-900 bg-[#050505] p-8">
               <h2 className="mb-8 text-2xl font-medium">Endpoint</h2>
 
@@ -101,7 +91,7 @@ export default function DeploymentDetails() {
                 </p>
 
                 <code className="break-all text-sm text-zinc-300">
-                  https://api.neuralship.ai/v1/
+                  https:
                   {deployment.name.toLowerCase().replace(/\s+/g, "-")}
                 </code>
               </div>
@@ -132,8 +122,6 @@ export default function DeploymentDetails() {
                 </div>
               </div>
             </div>
-
-            {/* Deployment Info */}
 
             <div className="rounded-3xl border border-zinc-900 bg-[#050505] p-8">
               <h2 className="mb-8 text-2xl font-medium">
@@ -176,10 +164,7 @@ export default function DeploymentDetails() {
             </div>
           </section>
 
-          {/* Deployment Timeline */}
           <section className="grid gap-8 lg:grid-cols-2">
-            {/* Timeline */}
-
             <div className="rounded-3xl border border-zinc-900 bg-[#050505] p-8">
               <h2 className="mb-8 text-2xl font-medium">Deployment Timeline</h2>
 
@@ -235,8 +220,6 @@ export default function DeploymentDetails() {
               </div>
             </div>
 
-            {/* Logs */}
-
             <div className="overflow-hidden rounded-3xl border border-zinc-900 bg-[#050505]">
               <div className="border-b border-zinc-900 px-8 py-5">
                 <h2 className="text-2xl font-medium">Recent Logs</h2>
@@ -264,11 +247,7 @@ export default function DeploymentDetails() {
             </div>
           </section>
 
-          {/* Bottom Section */}
-
           <section className="grid gap-8 lg:grid-cols-2">
-            {/* Environment Variables */}
-
             <div className="rounded-3xl border border-zinc-900 bg-[#050505] p-8">
               <h2 className="mb-8 text-2xl font-medium">
                 Environment Variables
@@ -293,8 +272,6 @@ export default function DeploymentDetails() {
                 ))}
               </div>
             </div>
-
-            {/* Recent Requests */}
 
             <div className="rounded-3xl border border-zinc-900 bg-[#050505]">
               <div className="border-b border-zinc-900 px-8 py-5">

@@ -12,11 +12,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-zinc-900">
       <div className="mx-auto max-w-7xl px-6 py-14">
-        {/* Top */}
-
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
-          {/* Brand */}
-
           <div className="lg:col-span-2">
             <div className="mb-5 flex items-center gap-3">
               <Logo />
@@ -29,8 +25,6 @@ export default function Footer() {
               platform inspired by today's best cloud developer tools.
             </p>
           </div>
-
-          {/* Product */}
 
           <div>
             <h3 className="mb-5 text-sm font-medium">Product</h3>
@@ -59,8 +53,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Resources */}
-
           <div>
             <h3 className="mb-5 text-sm font-medium">Resources</h3>
 
@@ -78,8 +70,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Project */}
-
           <div>
             <h3 className="mb-5 text-sm font-medium">Built With</h3>
 
@@ -94,8 +84,6 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
-        {/* Bottom */}
 
         <div className="mt-14 flex flex-col gap-4 border-t border-zinc-900 pt-8 text-sm text-zinc-600 md:flex-row md:items-center md:justify-between">
           <p>© 2026 NeuralShip. Built for educational purposes.</p>

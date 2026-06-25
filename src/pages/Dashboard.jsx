@@ -101,8 +101,6 @@ export default function Dashboard() {
       <Navbar />
 
       <main className="min-h-screen bg-black text-white">
-        {/* Header */}
-
         <section className="border-b border-zinc-900">
           <div className="mx-auto max-w-7xl px-6 py-10">
             <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
@@ -145,11 +143,7 @@ export default function Dashboard() {
           </div>
         </section>
 
-        {/* Body */}
-
         <div className="mx-auto max-w-7xl space-y-10 px-6 py-10">
-          {/* Stats */}
-
           <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
             <StatCard title="Deployments" value={deployments.length} />
 
@@ -159,8 +153,6 @@ export default function Dashboard() {
 
             <StatCard title="Latency" value="128ms" />
           </div>
-
-          {/* Create Deployment */}
 
           <section className="rounded-3xl border border-zinc-900 bg-[#050505] p-8">
             <div className="mb-8">
@@ -241,8 +233,6 @@ export default function Dashboard() {
               </div>
             </form>
           </section>
-
-          {/* Recent Deployments */}
 
           <section className="rounded-3xl border border-zinc-900 bg-[#050505]">
             <div className="flex items-center justify-between border-b border-zinc-900 px-8 py-6">
@@ -327,11 +317,7 @@ export default function Dashboard() {
             </div>
           </section>
 
-          {/* Bottom Grid */}
-
           <div className="grid gap-8 lg:grid-cols-2">
-            {/* Activity */}
-
             <section className="rounded-3xl border border-zinc-900 bg-[#050505] p-8">
               <div className="mb-8 flex items-center justify-between">
                 <h2 className="text-xl font-medium">Activity</h2>
@@ -373,8 +359,6 @@ export default function Dashboard() {
                 </div>
               </div>
             </section>
-
-            {/* Quick Information */}
 
             <section className="rounded-3xl border border-zinc-900 bg-[#050505] p-8">
               <h2 className="mb-8 text-xl font-medium">Platform Overview</h2>

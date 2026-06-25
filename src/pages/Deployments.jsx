@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import Navbar from "../components/Navbar";
 import DeploymentCard from "../components/DeploymentCard";
 import { deployments } from "../data/deployments";
+import { Link } from "react-router-dom";
 
 export default function Deployments() {
   const [search, setSearch] = useState("");
@@ -11,12 +12,10 @@ export default function Deployments() {
   const filteredDeployments = useMemo(() => {
     let data = [...deployments];
 
-    // Search
     data = data.filter((deployment) =>
       deployment.name.toLowerCase().includes(search.toLowerCase()),
     );
 
-    // Status Filter
     if (filter !== "All") {
       data = data.filter(
         (deployment) =>
@@ -24,7 +23,6 @@ export default function Deployments() {
       );
     }
 
-    // Sorting
     if (sortBy === "Name") {
       data.sort((a, b) => a.name.localeCompare(b.name));
     }
@@ -45,8 +43,6 @@ export default function Deployments() {
       <Navbar />
 
       <main className="min-h-screen bg-black text-white">
-        {/* Header */}
-
         <section className="border-b border-zinc-900">
           <div className="mx-auto flex max-w-7xl flex-col gap-8 px-6 py-14 lg:flex-row lg:items-center lg:justify-between">
             <div>
@@ -64,19 +60,18 @@ export default function Deployments() {
               </p>
             </div>
 
-            <button className="rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition hover:bg-zinc-200">
+            <Link
+              to="/dashboard"
+              className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition hover:bg-zinc-200"
+            >
               New Deployment
-            </button>
+            </Link>
           </div>
         </section>
-
-        {/* Filters */}
 
         <section className="border-b border-zinc-900">
           <div className="mx-auto max-w-7xl px-6 py-8">
             <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-              {/* Search */}
-
               <input
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
@@ -113,8 +108,6 @@ export default function Deployments() {
           </div>
         </section>
 
-        {/* Results */}
-
         <section className="mx-auto max-w-7xl px-6 py-12">
           <div className="mb-10 flex items-center justify-between">
             <div>
@@ -143,8 +136,6 @@ export default function Deployments() {
             </div>
           )}
         </section>
-
-        {/* Summary */}
 
         <section className="border-t border-zinc-900">
           <div className="mx-auto grid max-w-7xl gap-6 px-6 py-16 md:grid-cols-3">
@@ -183,8 +174,6 @@ export default function Deployments() {
             </div>
           </div>
         </section>
-
-        {/* Recent Activity */}
 
         <section>
           <div className="mx-auto max-w-7xl px-6 pb-20">

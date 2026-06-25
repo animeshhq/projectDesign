@@ -35,8 +35,6 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-zinc-900 bg-black/90 backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-        {/* Logo */}
-
         <Link to="/" className="flex items-center gap-3">
           <Logo />
 
@@ -44,8 +42,6 @@ export default function Navbar() {
             NeuralShip
           </span>
         </Link>
-
-        {/* Desktop Navigation */}
 
         <nav className="hidden items-center gap-2 md:flex">
           {links.map((link) => {
@@ -67,8 +63,6 @@ export default function Navbar() {
           })}
         </nav>
 
-        {/* Desktop CTA */}
-
         <div className="hidden md:block">
           <Link
             to="/dashboard"
@@ -77,8 +71,6 @@ export default function Navbar() {
             Deploy Now
           </Link>
         </div>
-
-        {/* Mobile Button */}
 
         <button
           onClick={() => setMenuOpen(!menuOpen)}
@@ -103,8 +95,6 @@ export default function Navbar() {
           </svg>
         </button>
       </div>
-
-      {/* Mobile Menu */}
 
       <div
         className={`overflow-hidden border-t border-zinc-900 bg-black transition-all duration-300 md:hidden ${

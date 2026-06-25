@@ -63,8 +63,6 @@ export default function Docs() {
       <Navbar />
 
       <main className="min-h-screen bg-black text-white">
-        {/* HERO */}
-
         <section className="border-b border-zinc-900">
           <div className="mx-auto max-w-7xl px-6 py-20">
             <p className="mb-4 font-mono text-xs uppercase tracking-[0.25em] text-zinc-500">
@@ -82,12 +80,8 @@ export default function Docs() {
           </div>
         </section>
 
-        {/* CONTENT */}
-
         <section>
           <div className="mx-auto grid max-w-7xl gap-16 px-6 py-16 lg:grid-cols-[240px_1fr]">
-            {/* SIDEBAR */}
-
             <aside className="hidden lg:block">
               <div className="sticky top-24">
                 <h3 className="mb-6 text-sm font-medium text-zinc-400">
@@ -116,11 +110,7 @@ export default function Docs() {
               </div>
             </aside>
 
-            {/* MAIN */}
-
             <div className="space-y-24">
-              {/* INTRO */}
-
               <section id="introduction">
                 <p className="mb-3 font-mono text-xs uppercase tracking-[0.25em] text-zinc-500">
                   Introduction
@@ -138,8 +128,6 @@ export default function Docs() {
                   infrastructure.
                 </p>
               </section>
-
-              {/* QUICK START */}
 
               <section id="quick-start">
                 <p className="mb-3 font-mono text-xs uppercase tracking-[0.25em] text-zinc-500">
@@ -187,8 +175,6 @@ export default function Docs() {
                 </div>
               </section>
 
-              {/* INSTALL */}
-
               <section id="installation">
                 <p className="mb-3 font-mono text-xs uppercase tracking-[0.25em] text-zinc-500">
                   Installation
@@ -219,8 +205,6 @@ neuralship deploy
                   </pre>
                 </div>
               </section>
-
-              {/* FIRST DEPLOYMENT */}
 
               <section id="deployments">
                 <p className="mb-3 font-mono text-xs uppercase tracking-[0.25em] text-zinc-500">
@@ -263,8 +247,6 @@ neuralship deploy
                   </div>
                 </div>
               </section>
-
-              {/* DASHBOARD */}
 
               <section id="dashboard">
                 <p className="mb-3 font-mono text-xs uppercase tracking-[0.25em] text-zinc-500">
@@ -329,7 +311,6 @@ neuralship deploy
                   </div>
                 </div>
               </section>
-              {/* API */}
 
               <section id="api">
                 <p className="mb-3 font-mono text-xs uppercase tracking-[0.25em] text-zinc-500">
@@ -350,7 +331,7 @@ neuralship deploy
                   </div>
 
                   <pre className="overflow-x-auto p-6 text-sm text-zinc-300">
-                    {`curl -X POST https://api.neuralship.ai/v1/inference \\
+                    {`curl -X POST https:
               -H "Authorization: Bearer YOUR_API_KEY" \\
               -H "Content-Type: application/json" \\
               -d '{
@@ -360,8 +341,6 @@ neuralship deploy
                   </pre>
                 </div>
               </section>
-
-              {/* BEST PRACTICES */}
 
               <section>
                 <p className="mb-3 font-mono text-xs uppercase tracking-[0.25em] text-zinc-500">
@@ -387,8 +366,6 @@ neuralship deploy
                   ))}
                 </div>
               </section>
-
-              {/* FAQ */}
 
               <section id="faq">
                 <p className="mb-3 font-mono text-xs uppercase tracking-[0.25em] text-zinc-500">
